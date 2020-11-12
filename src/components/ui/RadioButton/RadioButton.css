@@ -1,0 +1,27 @@
+.radio-button-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  margin: 15px 0;
+}
+
+.radio-button-label {
+  width: fit-content;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.radio-button {
+  position: absolute;
+  margin: 5px 0 0 -20px;
+}
+
+.radio-button-description {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+  min-height: 17px;
+}
