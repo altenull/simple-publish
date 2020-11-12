@@ -1,4 +1,4 @@
-import { React } from "react";
+import { Fragment, React } from "react";
 import { ContentsHeader, OwnerDropdown } from "../../new-repository";
 import { Button, Checkbox, HorizontalRule, Input, RadioButton } from "../../ui";
 import "./NewRepositoryPage.css";
@@ -52,15 +52,30 @@ const NewRepositoryPage = () => {
 
         <Checkbox
           label="Add a README file"
-          description="This is where you can write a long description for your project. Learn more."
+          description={
+            <Fragment>
+              This is where you can write a long description for your project.{" "}
+              <a href="/">Learn more.</a>
+            </Fragment>
+          }
         />
         <Checkbox
           label="Add .gitignore"
-          description="Choose which files not to track from a list of templates. Learn more."
+          description={
+            <Fragment>
+              Choose which files not to track from a list of templates.{" "}
+              <a href="/">Learn more.</a>
+            </Fragment>
+          }
         />
         <Checkbox
           label="Choose a license"
-          description="A license tells others what they can and can't do with your code. Learn more."
+          description={
+            <Fragment>
+              A license tells others what they can and can't do with your code.{" "}
+              <a href="/">Learn more.</a>
+            </Fragment>
+          }
         />
 
         <h5>Grant your Marketplace apps access to this repository</h5>
