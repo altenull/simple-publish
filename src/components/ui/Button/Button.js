@@ -1,9 +1,12 @@
 import React from "react";
 import "./Button.css";
 
-const Button = ({ children, kind = "primary", disabled = false }) => {
+const Button = ({ children, kind = "", disabled = false }) => {
   return (
-    <button className={`btn btn-${kind}`} disabled={disabled}>
+    <button
+      className={`btn ${!!kind ? `btn-${kind}` : ""}`}
+      disabled={disabled}
+    >
       {children}
     </button>
   );
