@@ -10,22 +10,22 @@
 }
 
 .input {
-  background-color: #fafbfc;
   padding: 5px 12px;
   font-size: 0.875rem;
   line-height: 20px;
-  color: var(--color-text-primary);
   vertical-align: middle;
+  color: var(--color-text-primary);
+  background-color: var(--color-input-contrast-bg);
   background-repeat: no-repeat;
   background-position: right 8px center;
-  border: 1px solid #e1e4e8;
+  border: 1px solid var(--color-input-border);
   border-radius: 6px;
+  box-shadow: var(--color-shadow-inset);
   outline: none;
-  box-shadow: 0 1px 0 rgba(225, 228, 232, 0.2);
 }
 
 .input:focus {
-  background-color: #ffffff;
-  border-color: #0366d6;
-  box-shadow: 0 0 0 3px rgba(3, 102, 214, 0.3);
+  background-color: var(--color-input-bg);
+  border-color: var(--color-state-focus-border);
+  box-shadow: var(--color-state-focus-shadow);
 }
