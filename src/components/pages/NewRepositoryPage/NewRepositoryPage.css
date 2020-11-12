@@ -1,0 +1,34 @@
+.center-holder {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.slash-divider {
+  font-size: 1.5rem;
+  padding-top: 24px;
+  margin: 4px 8px 0;
+}
+
+.repository-name-suggestion {
+  color: #34631a;
+  cursor: pointer;
+}
+
+.owner-and-repository-name-group {
+  display: flex;
+}
+
+.vertical-margin-8 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.margin-bottom-10 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.text-gray {
+  color: var(--color-text-secondary);
+}
