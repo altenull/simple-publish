@@ -1,0 +1,11 @@
+.contents-header {
+  border-bottom: 1px solid var(--color-border-secondary);
+  margin-bottom: 32px;
+}
+
+.sub-heading {
+  margin-top: -8px;
+  margin-bottom: 16px;
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
