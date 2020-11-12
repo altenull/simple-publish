@@ -15,6 +15,13 @@
   cursor: pointer;
 }
 
+.sub-label {
+  min-height: 17px;
+  margin: 4px 0 2px;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
 .owner-and-repository-name-group {
   display: flex;
 }

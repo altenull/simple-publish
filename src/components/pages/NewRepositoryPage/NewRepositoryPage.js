@@ -29,7 +29,11 @@ const NewRepositoryPage = () => {
 
         <Input
           id="repository-description-input"
-          label="Description (optional)"
+          label={
+            <Fragment>
+              Description <span className="sub-label">(optional)</span>
+            </Fragment>
+          }
         />
 
         <HorizontalRule />
