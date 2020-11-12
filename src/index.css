@@ -602,3 +602,12 @@ p {
   font-weight: 400;
   color: var(--color-text-primary);
 }
+
+a {
+  color: var(--color-text-link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
