@@ -1,6 +1,6 @@
 # Simple Publish
 
-| This is a small publishing job to clone main part of https://github.com/new **without frameworks or libraries**.
+> This is a small publishing job to clone main part of https://github.com/new **without frameworks or libraries**.
 
 ## Publishing Target
 
