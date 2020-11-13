@@ -1,6 +1,14 @@
 import { Fragment, React } from "react";
 import { ContentsHeader, OwnerDropdown } from "../../new-repository";
-import { Button, Checkbox, HorizontalRule, Input, RadioButton } from "../../ui";
+import {
+  Button,
+  BookIcon,
+  LockIcon,
+  Checkbox,
+  HorizontalRule,
+  Input,
+  RadioButton,
+} from "../../ui";
 import "./NewRepositoryPage.css";
 
 const NewRepositoryPage = () => {
@@ -41,10 +49,12 @@ const NewRepositoryPage = () => {
         <RadioButton
           label="Public"
           description="Anyone on the internet can see this repository. You choose who can commit."
+          icon={<BookIcon color="#959da5" />}
         />
         <RadioButton
           label="Private"
           description="You choose who can see and commit to this repository."
+          icon={<LockIcon color="#735c0f80" />}
         />
 
         <HorizontalRule />

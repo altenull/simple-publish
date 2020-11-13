@@ -5,6 +5,9 @@
   padding-left: 20px;
   margin: 15px 0;
 }
+.radio-button-wrapper-with-icon {
+  padding-left: 56px;
+}
 
 .radio-button-label {
   width: fit-content;
@@ -15,6 +18,18 @@
 .radio-button {
   position: absolute;
   margin: 5px 0 0 -20px;
+}
+.radio-button-with-icon {
+  margin: 5px 0 0 -56px;
+}
+
+.radio-button-icon {
+  position: absolute;
+  left: 18px;
+  top: 0;
+  max-width: 32px;
+  max-height: 32px;
+  margin-top: 2px;
 }
 
 .radio-button-description {
