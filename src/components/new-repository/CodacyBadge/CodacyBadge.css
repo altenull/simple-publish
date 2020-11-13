@@ -1,0 +1,16 @@
+.codacy-badge {
+  background: #242c33;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(149, 157, 165, 0.15);
+}
+
+.codacy-icon {
+  height: auto;
+  max-width: 60%;
+  max-height: 55%;
+}
