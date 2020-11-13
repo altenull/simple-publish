@@ -1,12 +1,16 @@
 import { Fragment, React } from "react";
-import { ContentsHeader, OwnerDropdown } from "../../new-repository";
 import {
-  Button,
+  CodacyBadge,
+  ContentsHeader,
+  OwnerDropdown,
+} from "../../new-repository";
+import {
   BookIcon,
-  LockIcon,
+  Button,
   Checkbox,
   HorizontalRule,
   Input,
+  LockIcon,
   RadioButton,
 } from "../../ui";
 import "./NewRepositoryPage.css";
@@ -98,6 +102,7 @@ const NewRepositoryPage = () => {
         <Checkbox
           label="Codacy"
           description="Automated code reviews to help developers ship better software, faster"
+          icon={<CodacyBadge />}
         />
 
         <HorizontalRule />
