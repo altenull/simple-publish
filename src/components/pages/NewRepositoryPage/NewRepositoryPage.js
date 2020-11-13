@@ -14,6 +14,7 @@ import {
   RadioButton,
 } from "../../ui";
 import "./NewRepositoryPage.css";
+import altenullProfileSrc from "../../../assets/images/altenull-profile.jpeg";
 
 const RepositoryPrivacyEunm = Object.freeze({
   Public: "Public",
@@ -40,7 +41,7 @@ const NewRepositoryPage = () => {
         <div className="owner-and-repository-name-group">
           <OwnerDropdown
             ownerName="altenull"
-            ownerImgSrc="https://avatars0.githubusercontent.com/u/26947777?s=60&amp;v=4"
+            ownerImgSrc={altenullProfileSrc}
           />
           <span className="slash-divider">/</span>
           <Input id={"repository-name-input"} label="Repository name *" />
