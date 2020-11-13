@@ -5,6 +5,9 @@
   padding-left: 20px;
   margin: 15px 0;
 }
+.checkbox-wrapper-with-icon {
+  padding-left: 56px;
+}
 
 .checkbox-label {
   width: fit-content;
@@ -15,6 +18,18 @@
 .checkbox {
   position: absolute;
   margin: 5px 0 0 -20px;
+}
+.checkbox-with-icon {
+  margin: 12px 0 0 -56px;
+}
+
+.checkbox-icon {
+  position: absolute;
+  left: 18px;
+  top: 0;
+  max-width: 32px;
+  max-height: 32px;
+  margin-top: 2px;
 }
 
 .checkbox-description {
