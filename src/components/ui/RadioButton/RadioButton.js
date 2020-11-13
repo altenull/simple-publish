@@ -1,7 +1,13 @@
 import { React } from "react";
 import "./RadioButton.css";
 
-const RadioButton = ({ label, description, icon }) => {
+const RadioButton = ({
+  checked = false,
+  label,
+  description,
+  icon,
+  onClick,
+}) => {
   const hasIcon = icon != null;
 
   return (
@@ -9,10 +15,12 @@ const RadioButton = ({ label, description, icon }) => {
       className={`radio-button-wrapper${
         hasIcon ? " radio-button-wrapper-with-icon" : ""
       }`}
+      onClick={() => onClick()}
     >
       <label className="radio-button-label">
         <input
           type="radio"
+          checked={checked}
           className={`radio-button${hasIcon ? " radio-button-with-icon" : ""}`}
         />
         {label}

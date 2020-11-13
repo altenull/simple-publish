@@ -1,4 +1,4 @@
-import { Fragment, React } from "react";
+import { Fragment, React, useState } from "react";
 import {
   CodacyBadge,
   ContentsHeader,
@@ -15,7 +15,23 @@ import {
 } from "../../ui";
 import "./NewRepositoryPage.css";
 
+const RepositoryPrivacyEunm = Object.freeze({
+  Public: "Public",
+  Private: "Private",
+});
+
 const NewRepositoryPage = () => {
+  // HACK to prevent multiple radio buttons from being selected.
+  const [selectedRepositoryPrivacy, setSelectedRepositoryPrivacy] = useState(
+    RepositoryPrivacyEunm.Public
+  );
+
+  const changeRepositoryPrivacy = (newRepositoryPrivacy) => {
+    if (selectedRepositoryPrivacy !== newRepositoryPrivacy) {
+      setSelectedRepositoryPrivacy(newRepositoryPrivacy);
+    }
+  };
+
   return (
     <div>
       <div className="center-holder">
@@ -51,14 +67,18 @@ const NewRepositoryPage = () => {
         <HorizontalRule />
 
         <RadioButton
-          label="Public"
+          checked={RepositoryPrivacyEunm.Public === selectedRepositoryPrivacy}
+          label={RepositoryPrivacyEunm.Public}
           description="Anyone on the internet can see this repository. You choose who can commit."
           icon={<BookIcon color="#959da5" />}
+          onClick={() => changeRepositoryPrivacy(RepositoryPrivacyEunm.Public)}
         />
         <RadioButton
-          label="Private"
+          checked={RepositoryPrivacyEunm.Private === selectedRepositoryPrivacy}
+          label={RepositoryPrivacyEunm.Private}
           description="You choose who can see and commit to this repository."
           icon={<LockIcon color="#735c0f80" />}
+          onClick={() => changeRepositoryPrivacy(RepositoryPrivacyEunm.Private)}
         />
 
         <HorizontalRule />
