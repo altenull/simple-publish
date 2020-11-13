@@ -26,6 +26,13 @@
   display: flex;
 }
 
+.sub-description {
+  min-height: 17px;
+  margin: 4px 0 2px;
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}
+
 .vertical-margin-8 {
   margin-top: 8px;
   margin-bottom: 8px;

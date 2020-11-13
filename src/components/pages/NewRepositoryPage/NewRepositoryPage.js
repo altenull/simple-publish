@@ -97,7 +97,9 @@ const NewRepositoryPage = () => {
         />
 
         <h5>Grant your Marketplace apps access to this repository</h5>
-        <p>You are subscribed to 1 Marketplace app</p>
+        <p className="sub-description">
+          You are subscribed to 1 Marketplace app
+        </p>
 
         <Checkbox
           label="Codacy"
